@@ -1,3 +1,8 @@
 [workspace]
 resolver = "3"
-members = ["platform_layer"]
+members = ["game", "handmade_macros","logger","platform_layer"]
+
+[workspace.dependencies]
+logger = {path = "./logger"}
+game = {path = "./game"}
+handmade_macros = {path = "./handmade_macros"}

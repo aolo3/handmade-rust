@@ -1,0 +1,11 @@
+[package]
+name = "game"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/handmade.rs"
+crate-type = ['cdylib', 'rlib']
+
+[dependencies]
+logger = {workspace = true}
